@@ -1,13 +1,13 @@
 #!/bin/bash
-# Complete Pipeline: Access FASTQ files, Trimming, Mapping, Sorting, Primer Trimming, and Consensus Calling
+# Analysis Pipeline: Access FASTQ files, Trimming, Mapping, Sorting, Primer Trimming, and Consensus Calling
 
 # Define reference files
-REFERENCE_FASTA="/home/azzam/HID/genome_ref/reference.fasta"
-PRIMER_BED="/home/azzam/HID/genome_ref/mtDNA.bed"
-ADAPTERS="/home/azzam/mambaforge/envs/mt-analysis/share/trimmomatic-0.39-2/adapters/adapters.fa"
+REFERENCE_FASTA="/home/<user>/Analysis/genome_ref/reference.fasta"
+PRIMER_BED="/home/<user>/Analysis/genome_ref/mtDNA.bed"
+ADAPTERS="/home/<user>/mambaforge/envs/mt-analysis/share/trimmomatic-0.39-2/adapters/adapters.fa"
 
 # Define raw reads directory
-RAW_READS_DIR="/home/azzam/HID/raw_reads"
+RAW_READS_DIR="/home/<user>/Analysis/raw_reads"
 
 # Ensure necessary directories exist
 mkdir -p trimmed bams trimmed_bams sorted_bams consensus
