@@ -37,11 +37,9 @@ sudo apt upgrade
 ```
 9. Install a package manager, conda, by installing the miniconda version to manage your packages and environments during analysis:
     
-   For Miniconda:
-   ```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh .
 ```
-   
+  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh .
+``` 
 10. Install the downloaded package:
 
 ```
