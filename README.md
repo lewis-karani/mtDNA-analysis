@@ -60,9 +60,16 @@ This is a shorthand command of "source ~/.bashrc"
 ```
 conda config --add channels <channel-name>
 ```
-Add the 'conda-forge' and 'bioconda' channels for now; in future you may need to configure more channels as you install different packages
-14. create an environment named mt-analysis by running the following commands using the yaml file provided i.e. mt-analysis.yml[https://github.com/lewis-karani/mtDNA-analysis/blob/main/mt-analysis.yml]
+Add the 'conda-forge' and 'bioconda' channels for now; in future you may need to configure more channels as you install different packages.
+
+14. create an environment named mt-analysis by running the following commands using the yaml file provided i.e. [mt-analysis.yml](https://github.com/lewis-karani/mtDNA-analysis/blob/main/mt-analysis.yml)
+
 ```
 conda env create --file mt-analysis.yml
 ```
-This will install all the tools required for the CLI analysis of the sequencing reads
+This will install all the tools required for the CLI analysis of the sequencing reads.
+
+15. Activate the environment:
+```
+conda activate mt-analysis
+```
