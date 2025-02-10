@@ -2,7 +2,7 @@
 This repository contains the instructions on how to analyze paired end reads from Illumina sequencing of mitochondrial DNA in a command line environment
 
 ## Before we begin
-### Set up WSL on your windows computers and install ubuntu virtual machine from the microsoft store. If you're running a Linux platform...Awesome!!!
+### Set up WSL on your windows computers and install ubuntu virtual machine from the microsoft store. If you're already running a bash platform...Awesome!!! Skip to step 8.
 
 1. Open Windows Powershell as administrator( press Win + X then select "Windows PowerShell (Admin)" )
 2. Check if wsl is enabled by running the following command:
