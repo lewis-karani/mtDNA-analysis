@@ -9,7 +9,7 @@ This repository contains the instructions on how to analyze paired end reads fro
 ```
    Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
  ```   
-If WSL is enabled, you should see "State: Enabled" in the output
+   If WSL is enabled, you should see "State: Enabled" in the output
 
 3. If not enabled you can enable it by running the following command:
 ```
@@ -49,32 +49,32 @@ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 $SHELL
 ```
-or
+   or
 ```
 . ~/.bashrc
 ```
-This is a shorthand command of "source ~/.bashrc"
+   This is a shorthand command of "source ~/.bashrc"
 
-12. If successful you should see the name (base) displayed before your system name on the terminal
+12. If successful you should see the name `base` displayed before your system name on the terminal
 13. Configure channels to conda by adding them to the Condarc channel list:
 ```
 conda config --add channels <channel-name>
 ```
-Add the 'conda-forge' and 'bioconda' channels for now; in future you may need to configure more channels as you install different packages.
+Add the `conda-forge` and `bioconda` channels for now; in future you may need to configure more channels as you install different packages.
 
-14. create an environment named mt-analysis by running the following commands using the yaml file provided i.e. [mt-analysis.yml](https://github.com/lewis-karani/mtDNA-analysis/blob/main/mt-analysis.yml)
+14. create an environment named `mt-analysis` by running the following commands using the yaml file provided i.e. [mt-analysis.yml](https://github.com/lewis-karani/mtDNA-analysis/blob/main/mt-analysis.yml)
 
 ```
 conda env create --file mt-analysis.yml
 ```
-This will install all the tools required for the CLI analysis of the sequencing reads.
+   This will install all the tools required for the CLI analysis of the sequencing reads.
 
 15. Activate the environment:
 ```
 conda activate mt-analysis
 ```
 16. Create an `Analysis` directory and within it two sub-directories `raw_reads` and `genome_ref`.
-17. Add your FastQ files to the `raw_reads` directory, and the two files [mtDNA.bed](https://github.com/lewis-karani/mtDNA-analysis/blob/main/mtDNA.bed) and [reference.fasta](https://github.com/lewis-karani/mtDNA-analysis/blob/main/reference.fasta) to the `genome_ref` directory
+17. Add your FastQ files to the `raw_reads` directory, and the two files [mtDNA.bed](https://github.com/lewis-karani/mtDNA-analysis/blob/main/mtDNA.bed) and [reference.fasta](https://github.com/lewis-karani/mtDNA-analysis/blob/main/reference.fasta) to the `genome_ref`       directory
 18. Copy the analysis bash script [analysis.py](https://github.com/lewis-karani/mtDNA-analysis/blob/main/analysis.py) into the `Analysis` directory.
 19. Adopt the script to your machine by replacing `<user>` with your username and make it executable by running the command
 ```
