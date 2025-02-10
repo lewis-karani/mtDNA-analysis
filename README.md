@@ -73,3 +73,17 @@ This will install all the tools required for the CLI analysis of the sequencing 
 ```
 conda activate mt-analysis
 ```
+16. Create an `Analysis` directory and within it two sub-directories `raw_reads` and `genome_ref`.
+17. Add your FastQ files to the `raw_reads` directory, and the two files [mtDNA.bed](https://github.com/lewis-karani/mtDNA-analysis/blob/main/mtDNA.bed) and [reference.fasta](https://github.com/lewis-karani/mtDNA-analysis/blob/main/reference.fasta) to the `genome_ref` directory
+18. Copy the analysis bash script [analysis.py](https://github.com/lewis-karani/mtDNA-analysis/blob/main/analysis.py) into the `Analysis` directory.
+19. Adopt the script to your machine by replacing `<user>` with your username and make it executable by running the command
+```
+chmod +x analysis.py
+```
+20. You can now execute it.
+```
+.analysis.py
+```
+
+
+
